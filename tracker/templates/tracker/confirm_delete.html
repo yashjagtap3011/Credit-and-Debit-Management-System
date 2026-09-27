@@ -1,0 +1,1 @@
+{% extends 'tracker/base.html' %}{% block content %}<h1>Delete transaction?</h1><p>{{ object.date }} ? {{ object.get_transaction_type_display }} ? {{ object.amount }} ? {{ object.description }}</p><form method="post">{% csrf_token %}<button class="btn btn-danger">Delete</button> <a class="btn btn-secondary" href="{% url 'transactions' %}">Cancel</a></form>{% endblock %}

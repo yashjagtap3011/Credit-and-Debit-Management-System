@@ -1,0 +1,1 @@
+{% extends 'tracker/base.html' %}{% block content %}<h1>{{ title|default:'Account' }}</h1><form method="post" class="card card-body" enctype="multipart/form-data">{% csrf_token %}{{ form.as_p }}<button class="btn btn-primary">Save</button></form>{% endblock %}
